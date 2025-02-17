@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <input type="text"  id="name" placeholder="Enter name">
+        <button onclick="demo()">click</button>
+
+        <script>
+            function demo(){
+                var inputValue = document.getElementById("name").value
+
+                if (!inputValue)
+            {
+                document.getElementById("name").style.border="2px solid red"
+                alert("Please enter your name")
+            }
+            }
+        </script>
+    </body>
+</html>

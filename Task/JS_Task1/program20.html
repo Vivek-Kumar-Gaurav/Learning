@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <input type="text" id="inputValue1" placeholder="Enter 1 no">
+        <input type="text" id="inputValue2" placeholder="Enter 2 no">
+        <button onclick="demo()">click</button>
+
+        <script>
+            function demo(){
+                let inputValue1 = document.getElementById("inputValue1").value
+                let inputValue2 = document.getElementById("inputValue2").value
+                let sum = parseInt(inputValue1)+parseInt(inputValue2)
+                alert(`Sum of ${inputValue1} and ${inputValue2} is ${sum} `)
+            }
+        </script>
+    </body>
+</html>

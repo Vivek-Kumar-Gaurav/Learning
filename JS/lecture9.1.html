@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <input id="text1" type="password" placeholder="Enter value">
+    <input id="btn" onclick="demo()" type="button" value="SHOW"></input>
+    <p id="msg"></p>
+
+    <script>
+        function demo()
+        {
+            var t1 = document.getElementById("text1") //abc
+            var b = document.getElementById("btn")
+            var p = document.getElementById("msg")
+            if(t1.value.length == 0)
+            {
+                p.innerText="Please Enter Your Password in textbox"
+                p.style.color="red"
+            }
+            else
+            {
+                p.innerText=""
+                if(b.value == "SHOW")
+                {
+                    b.value="HIDE"
+                    b.style.background="green"
+                    b.style.color="white"
+                    t1.type="text"
+                }
+                else{
+                    b.value="SHOW"
+                    b.style.background="red"
+                    b.style.color="white"
+                    t1.type="password"
+                }
+                
+            }    
+
+        }
+    </script>
+</body>
+</html>

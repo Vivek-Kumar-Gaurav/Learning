@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="msg"></p>
+    <input type="password" name="" id="t1" placeholder="Enter Password"><br><br>
+    <input type="password" name="" id="t2" placeholder="Re Enter Password"><br><br>
+    <button onclick="demo()">Validate</button>
+
+    <script>
+        function demo(){
+            var t1 = document.getElementById("t1")
+            var t2 = document.getElementById("t2")
+            var msg = document.getElementById("msg")
+            if(t1.value==t2.value){
+                msg.innerText="Both passwords are same..."
+                msg.style.Color="yellowgreen"
+                t1.style.border="3px solid yellowgreen"
+                t2.style.border="3px solid yellowgreen"
+            }
+            else{
+
+                msg.innerText="Both passwords are not same..."
+                msg.style.Color="red"
+                t1.style.border="3px solid red"
+                t2.style.border="3px solid red"
+            }
+        }
+    </script>
+</body>
+</html>

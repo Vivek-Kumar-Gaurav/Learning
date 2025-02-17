@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <center>
+        <img id="im" height="150px" src="https://img.freepik.com/premium-psd/light-bulb-isolated-transparent-background-3d-rendering-illustration_494250-59422.jpg?w=2000 "  alt=""><br>
+        <input type="button" id="btn" onclick="demo()" value="ON"><br><br>
+        <button onclick="demo1()">START</button>
+        <button onclick="demo2()">STOP</button>
+    </center>
+
+    <script>
+        function demo(){
+            var obj = document.getElementById("btn")
+            var img = document.getElementById("im")
+            if(obj.value=="ON")
+            {
+                obj.value="OFF"
+                img.src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940186lbyqngqg1y.png"
+                obj.style.background="red"
+                obj.style.color="white"
+            }
+            else
+            {
+                obj.value="ON"
+                img.src="https://img.freepik.com/premium-psd/light-bulb-isolated-transparent-background-3d-rendering-illustration_494250-59422.jpg?w=2000 "
+                obj.style.background="green"
+                obj.style.color="white"
+            }
+        }
+
+            var count = 0
+            function demo1()
+            {
+                count++
+
+                if(count == 1)
+                {
+                    x =  setInterval(demo, 1000)
+                }
+            }
+
+            function demo2()
+            {
+                clearInterval(x)
+                 
+            }
+        
+ 
+    </script>
+    
+</body>
+</html>

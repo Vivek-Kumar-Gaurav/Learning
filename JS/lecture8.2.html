@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        b{
+            font-size: 100px;
+            border: 5px solid orange;
+            color: orange;
+        }
+    </style>
+
+</head>
+<body onload="demo()">
+    
+    <b id="t1">Hi</b>
+    <b id="t2">Vivek</b>
+    <button>Auto Swap Text</button>
+
+
+    <p> use onload for first time call function</p>
+
+    
+<script>
+    function demo(){
+        var obj1 = document.getElementById("t1")
+        var obj2 = document.getElementById("t2")
+        var t1 = obj1.innerText 
+        var t2 = obj2.innerText 
+        obj1.innerText = t2
+        obj2.innerText = t1
+    setInterval(demo, 5000)
+
+    }
+
+    </script>
+</body>
+</html>

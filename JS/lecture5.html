@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="t1" placeholder="Enter 1 no"><br><br>
+    <input type="text" id="t2" placeholder="Enter 2 no"><br><br>
+    <input type="text"  id="res" placeholder="Result "><br><br>
+
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button>
+
+
+    <script>
+        let t1 = document.getElementById("t1")
+        let t2 = document.getElementById("t2")
+
+        function add(){
+            result = parseFloat(t1.value) + parseFloat(t2.value)
+            t1.value=""                                                           // for value delete after operation
+            t2.value=""
+            document.getElementById("res").value = result
+        } 
+        function sub(){
+            result = parseFloat(t1.value) - parseFloat(t2.value)
+            document.getElementById("res").value=` Sub is: ${result.toFixed(2)} `
+        }
+        function mul(){
+            result = parseFloat(t1.value) * parseFloat(t2.value)
+            document.getElementById("res").value=` Mul is: ${result.toFixed(2)} `
+        }
+        function div(){
+            result = parseFloat(t1.value) / parseFloat(t2.value)
+            document.getElementById("res").value=` Div is: ${result.toFixed(2)} `
+        }
+    </script>
+</body>
+</html>
