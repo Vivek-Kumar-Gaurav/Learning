@@ -118,11 +118,58 @@ Eg:
 
 
 JAVA-SCRIPT
-===========
+==========================================================
+==========================================================
+          
+
+
+Style
+=======
+
+<b id="demo">vivek</b>
+
+ document.getElementsById("demo").style.color="red"
+ document.getElementsById("demo").style.fontSize="50px"
+ document.getElementsById("demo").style.background="red"
+ document.getElementsById("demo").style.textAlign="center"
+
+                    OR
+
+var obj =  document.getElementsById("demo")
+obj.style.color="red"
+obj.style.fontSize="50px"
+obj.style.background="red"
+obj.style.textAlign="center"
+
+
+value
+========
+value is used to set/get value of HTML selected form control.
+====
+Eg:
+---
+
+<input type="text" id="txt">  //RAM
+
+var x = document.getElementById("txt").value
+alert(x)
+                OR
+
+var x = document.getElementById("txt")
+x.value
+alert(x)
+
+
+
+
+
+
+
 =================================
 
 toFixed(2)   => 1.2222222   => 1.22
 toFixed(4)   => 1.2222222   => 1.2222
+
 
 
 .value  => return value provides by user
