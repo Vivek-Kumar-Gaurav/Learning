@@ -120,7 +120,9 @@ Eg:
 JAVA-SCRIPT
 ==========================================================
 ==========================================================
-          
+
+toFixed(2)   => 1.2222222   => 1.22
+toFixed(4)   => 1.2222222   => 1.2222         
 
 
 Style
@@ -142,13 +144,14 @@ obj.style.background="red"
 obj.style.textAlign="center"
 
 
+
 value
 ========
+It return value provides by user.
 value is used to set/get value of HTML selected form control.
 ====
 Eg:
 ---
-
 <input type="text" id="txt">  //RAM
 
 var x = document.getElementById("txt").value
@@ -156,26 +159,10 @@ alert(x)
                 OR
 
 var x = document.getElementById("txt")
-x.value
-alert(x)
+alert(x.value)
 
 
 
-
-
-
-
-=================================
-
-toFixed(2)   => 1.2222222   => 1.22
-toFixed(4)   => 1.2222222   => 1.2222
-
-
-
-.value  => return value provides by user
-Eg:
-    <input type="text" id="ti">
-    alert(ti.value)
 
 
 innerText=""
