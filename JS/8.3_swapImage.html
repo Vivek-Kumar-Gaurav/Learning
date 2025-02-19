@@ -12,7 +12,10 @@
             var y = document.getElementById("img2")
             var path1 = x.src
             var path2 = y.src
+            x.src = path2
+            y.src = path1
         }
+        setInterval(demo, 1000)
         
     </script>
 </body>
