@@ -6,20 +6,53 @@
     <title>Document</title>
     <style>
         body{
-            background-color: purple;
+            background: url("https://th.bing.com/th/id/R.e68fd7d7df06b375230817e420cb14b4?rik=0Kt8FL%2fNDWUgFg&riu=http%3a%2f%2fblended-html.com%2fbackground-images%2fbi-background-turquoise-white.png&ehk=8vEvblCfQiIba7y5iKFWxbiyjkuxctTyT%2b1XLCr2TfM%3d&risl=&pid=ImgRaw&r=0");
+            background-size: cover;
         }
         #login{
-            height: 300px;
-            width: 400px;
-            background-color: plum;
-            margin: 22% auto;
-            border-radius: 20px;
-            font-size: 20px;
+            height: 400px;
+            width: 650px;
+            background-color:rgba(0, 0, 0, .2);
+            backdrop-filter: blur(2px);
+            margin: 180px auto;
+            border-radius: 10px;
+            font-size: 22px;
             padding: 50px;
+            color: white;
+            box-sizing: border-box;
+            transition: all 1s;
         }
+        #login:hover{
+            background:rgba(255,255,255,.5);
+            color: black;
+            transition: all 1s;
+            box-shadow: 0px 0px 0px 20px rgb(255, 255, 255, .8),
+             0px 0px 0px 40px rgb(255, 255, 255, .6),
+             0px 0px 0px 60px rgb(255, 255, 255, .4),
+             0px 0px 0px 80px rgb(255, 255, 255, .2);
+        }
+        ::placeholder{
+            color: purple;
+        }
+        
         .txt{
-            width: 300PX;
-            padding: 10px;
+            height: 50px;
+            width: 100%;
+            margin-bottom: 10px;
+            border: none;
+            box-sizing: border-box;
+            color: blueviolet;
+            font-size: 17px;
+            background: transparent;
+            border-bottom: 5px solid purple;
+        }
+        .btn{
+            height: 50px;
+            width: 25%;
+            background: purple;
+            color: white;
+            border: none;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -30,11 +63,10 @@
             <input type="email" class="txt" placeholder="USERID...">
         </label>
         <label>Password <br>
-            <input type="password" class="txt" placeholder="PASSWORDA...">
+            <input type="password" class="txt" placeholder="PASSWORD...">
         </label>
         <label>
-            Login <br>
-            <input type="submit" value="LOGIN">
+            <input type="submit" value="LOGIN" class="btn">
         </label>
     </div>
 </body>
