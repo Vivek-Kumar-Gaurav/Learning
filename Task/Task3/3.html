@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #outer{
+            height: 800px;
+            width: 1000px;
+        }
+        .a{
+            height: 200px;
+            background-color: seagreen;
+        }
+        .b{
+            height: 600px;
+            display: flex;
+            background-color: darkmagenta;
+        }
+        .left{
+            width: 200px;
+            background-color: salmon;
+        }
+        .right{
+           width:600px;
+            background-color: chocolate;
+        }
+        .mid{
+            height: 400px;
+            width: 600px;
+            display: flex;
+        }
+        .mid1{
+            height: 400px;
+            width: 300px;
+        }
+
+        .part{
+            height: 200px;
+            width: 300px;
+            background: aqua;
+        }
+        .bottom{
+            height: 200px;
+            background: gray;
+        }
+        .c{
+            background-color: darkmagenta;
+
+        }
+    </style></head>
+<body>
+    <div id="outer">
+        <div class="a"></div>
+        <div class="b">
+            <div class="left"></div>
+            <div class="right">
+                <div class="mid">
+                    <div class="mid1">
+                        <div class="part"></div>
+                        <div class="part c"></div>
+                    </div>
+                    <div class="mid1">
+                        <div class="part c"></div>
+                        <div class="part"></div>
+                    </div>
+                </div>
+                <div class="bottom"></div>
+            </div>
+            <div class="left"></div>
+        </div>
+    </div>
+</body>
+</html>

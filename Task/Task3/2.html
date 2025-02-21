@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #outer{
+            height: 600px;
+            width: 900px;
+            display: flex;
+            border: 2px solid black;
+        }
+        .first{
+            /* height: 500px; */
+            width: 200px;
+            background: plum;
+        }
+        .mid{
+            width: 500px;
+        }
+        .inner{
+            height: 200px;
+            background: greenyellow;
+            display: flex;
+        }
+        .a{
+            width: 200px;
+            background: navy;
+        }
+        .green{
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div class="first"></div>
+        <div class="mid">
+            <div class="inner"></div>
+            <div class="inner">
+                <div class="a"></div>
+                <div class="a green"></div>
+                <div class="a"></div>
+            </div>
+            <div class="inner"></div>
+        </div>
+        <div class="first"></div>
+    </div>
+</body>
+</html>
