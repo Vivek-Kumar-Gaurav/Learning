@@ -6,6 +6,33 @@
     <title>Document</title>
 </head>
 <body>
+    <p></p>
+    <h1></h1>
+    <button onclick="demo()">Click Me</button>
     
+    <script>
+        function demo(){
+            var arr = ["MERN STACK","HTML","CSS","JS", "JQUERY", "REACT-JS","NEXT-JS"]
+            var p = document.querySelector("p")
+            var r = "<select onchange = 'demo1()' >"
+                for (var i=0;i<arr.length;i++)
+                {
+                    //r = r+arr[i]
+                    r = r +"<option>" + arr[i] + "</option>"
+                }
+                    //r+ = "</select>"
+                    r =r + "</select>"
+                    p.innerHTML = r
+            }  
+            
+            function demo1(){
+                // alert("OK")
+            var ddl = document.querySelector("select")
+            var h1 = document.querySelector("h1")
+            // h1.innerHTML = ddl.value 
+            h1.innerHTML+= ddl.value + "&nbsp &nbsp"
+
+            }
+    </script>
 </body>
 </html>

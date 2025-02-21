@@ -9,17 +9,18 @@
     SELECT YOUR TRAINING
     <br>
     <select onchange="demo()">
-        <option value="">--SELECT TRAINING--</option>
-        <option value="">SUMMER TRAINING</option>
-        <option value="">WINTER TRAINING</option>
-        <option value="">INTERNSHIP</option>
-        <option value="">APPRENTICESHIP</option>
+        <option>--SELECT TRAINING--</option>
+        <option>SUMMER TRAINING</option>
+        <option>WINTER TRAINING</option>
+        <option>INTERNSHIP</option>
+        <option>APPRENTICESHIP</option>
     </select><br>
 
     TOTAL FEES TO PAY <br>
     <input type="text" readonly>
     <p></p>
 
+    
     <script>
         function demo()
         {
@@ -41,13 +42,10 @@
             if (ddl.value == "--SELECT TRAINING--")
             {
                 alert("Please Select Another Option...")
-                txt.value = "4000/-"
+                // txt.value = ""
                 
             }
         }
-
-
-
     </script>
     
 </body>
