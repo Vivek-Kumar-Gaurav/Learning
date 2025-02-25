@@ -18,21 +18,22 @@
             var p = document.querySelector("p")
             var color = ["yellowgreen", "aqua", "blue", "orange"]
             var arr=[]
-            for (var i=1;i<5;i++){
+            
+            for (var i=0;i<5;i++){
                 var data = prompt(`Enter Your Items ${i} ... `)
                 arr[i]= data
             }
             // arr = ["HTML", "CSS", "JS", "JQ", "BOOSTRAP"]
-            var r= "<select'>"
+            var r= "<select>"
                 var count = 0
             for (var x of arr){
                 // r=r+"<li>"+arr[i]+"</li>"
                 // r+= `<li> ${arr[i]} </li>`
-                r = r+"<option style='background:"+color[c]+";'>" +x+ "</option>"
+                r = r+"<option style='background:"+color[count]+";'>" +x+ "</option>"
             }
             r=r+"</select>"
             p.innerHTML=r
-            c==
+            count++
         }
 
     </script>
