@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <button onclick="demo()">Click Me</button>
+
+    <script>
+        var demo = () => {
+            var p = document.querySelector("p")
+            var arr=[]
+            for (var i=1;i<5;i++){
+                var data = prompt(`Enter Your Items ${i} ... `)
+                arr[i]= data
+            }
+            // arr = ["HTML", "CSS", "JS", "JQ", "BOOSTRAP"]
+            var r= "<ul type='square'>"
+            for (var i=0; i<arr.length;i++){
+                // r=r+"<li>"+arr[i]+"</li>"
+                // r+= `<li> ${arr[i]} </li>`
+                r = r+ `<li> ${arr[i]} </li>`
+            }
+            r=r+"</ul>"
+            // alert(r)   // returns with tag
+            p.innerHTML=r
+            // document.write(arr[i])
+        }
+    </script>
+</body>
+</html>

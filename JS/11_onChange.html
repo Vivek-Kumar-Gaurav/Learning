@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    SELECT YOUR TRAINING
+    <br>
+    <select onchange="demo()">
+        <option>--SELECT TRAINING--</option>
+        <option>SUMMER TRAINING</option>
+        <option>WINTER TRAINING</option>
+        <option>INTERNSHIP</option>
+        <option>APPRENTICESHIP</option>
+    </select><br>
+
+    TOTAL FEES TO PAY <br>
+    <input type="text" readonly>
+    <p></p>
+
+    
+    <script>
+        function demo()
+        {
+            var ddl = document.querySelector("select")
+            // alert(ddl)
+            var p = document.querySelector("p")
+            var txt = document.querySelector("input")
+            // p.innerHTML = `<b> Selected Value Is: </b> ${ddl.value} ` 
+            p.innerHTML = "<b> Selected Value Is : </b> " + ddl.value
+            
+            if (ddl.value == "SUMMER TRAINING")
+            txt.value = "6500/-"
+            if (ddl.value == "WINTER TRAINING")
+            txt.value = "5000/-"
+            if (ddl.value == "INTERNSHIP")
+            txt.value = "8000/-"
+            if (ddl.value == "APPRENTICESHIP")
+            txt.value = "4000/-"
+            if (ddl.value == "--SELECT TRAINING--")
+            {
+                alert("Please Select Another Option...")
+                // txt.value = ""
+                
+            }
+        }
+    </script>
+    
+</body>
+</html>

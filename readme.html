@@ -1,5 +1,22 @@
 <pre>
 
+VS CODE Extension
+=================
+code Runner
+Live Server
+Auto rename Tag
+Auto close Tag
+Vs Code Icon
+Code Snap
+
+
+
+
+
+======================================================
+                         HTML
+====================================================== 
+
 <marquee behavior="" direction="">vivek</marquee>
 ===================
 
@@ -29,14 +46,6 @@ Character Entities
 </font>
 
 
-VS code Extension
-=================
-code Runner
-Live Server
-Auto rename Tag
-Auto close Tag
-Vs Code Icon
-Code Snap
 
 
 Input Tag Attributes
@@ -45,7 +54,6 @@ autocomplete="off/on"
 autofocus
 disabled
 tabindex="1/2/3/4"  
-
 
 
 
@@ -84,22 +92,183 @@ Quantifires
 [0-9]{10,13}
 
 
+    
+Buttons
+============
+<input type="submit" name="" id="">
+<input type="reset" name="" id="">
+<input type="button" name="" id="">
+<input type="image" name="" id="">
+<button></button>
+
+
+
+
+
+
+
+====================================
+  ************** CSS **************
+=====================================
+
+
+
+=>transition:property time in second, property time in second
+eg:
+transition:color 2s, text-shadow 5.5s;
+
+transition:all time in second;
+transition:all 4s;
+
+box-shadow:horizontal vertical blur spread color side;
+
+Eg:  
+    box-shadow: 10px 10px 10px red inset, -10px -10px 10px blue ; 
+
+
+
+    Background
+    ==========
+    background:url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+
+
+
+
+=>box-sizing:border-box    
+=======================
+applicable on border & padding.
+
+box-sizing:content-box    // default 
+
+
+text-align: justify;
+font-size:16px;      //default
+
+
+=>  background:
+=================
+linear-gradient              => multiple color use
+repeating-linear-gradient    => repeating color 
+radial-gradient              => start center
+repeating-radial-gradient 
+conic-gradient 
+repeating-conic-gradient 
+------------------------------
+
+
+transform:rotate | skewX | skewY | skew | translateX | translateY | translate | 
+scaleX | scaleY | scale
+----------------------------------------------------------------------
+position: static default value | absolute | relative | fixed | sticky | top | bottom
+------------------------------------------------------------------------------------
+
+
+.outer:hover{
+    transform: rotate(90deg);
+    transition: all 1s;
+}
+
+
+Syntax of CSS Animation
+=========================
+@keyframes animationName
+{
+    from{
+        property: value
+        property: value
+    }
+    to{
+        property: value
+        property: value
+    }
+}
+======================================
+1. animation-name: animationName        
+2. animation-duration :                          // animation-name & duration both are use.
+
+3. animation: delay:
+4. animation-iteration-count: Number | Infinite
+5. animation-direction: normat | reverse | alternate 
+alternate-reverse  
+6.  animation-play-state:runnung Bydefault | pause
+7.  animation-fill-mode: forwards | backwords | both
+-------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 JAVA-SCRIPT
-===========
-=================================
+==========================================================
+==========================================================
 
 toFixed(2)   => 1.2222222   => 1.22
-toFixed(4)   => 1.2222222   => 1.2222
+toFixed(4)   => 1.2222222   => 1.2222         
 
 
-.value  => return value provides by user
+Style
+=======
+
+<b id="demo">vivek</b>
+
+ document.getElementsById("demo").style.color="red"
+ document.getElementsById("demo").style.fontSize="50px"
+ document.getElementsById("demo").style.background="red"
+ document.getElementsById("demo").style.textAlign="center"
+
+                    OR
+
+var obj =  document.getElementsById("demo")
+obj.style.color="red"
+obj.style.fontSize="50px"
+obj.style.background="red"
+obj.style.textAlign="center"
+
+
+
+value
+========
+It return value provides by user.
+value is used to set/get value of HTML selected form control.
+====
 Eg:
-    <input type="text" id="ti">
-    alert(ti.value)
+---
+<input type="text" id="txt">  //RAM
+
+var x = document.getElementById("txt").value
+alert(x)
+                OR
+
+var x = document.getElementById("txt")
+alert(x.value)
+
+
+
 
 
 innerText=""
@@ -125,11 +294,74 @@ var demo = () => {          => Arrow function
 
 
 
+Arrays in JAvsScript
+====================
+=> In JS array is collection of heterogenreous data type.
+=> Indexing of array is starts from 0 and last index is n-1 where n is length of array.
+
+
+Syntax:
+========
+var arrayName = [item1, item2, item3.........., itemN]
+OR
+var arrayName = new Array(item, item2,,,,,,,,,,,itemN)
+
+Eg:
+=======
+var array = ["rahul", 10, 20, 5.25]
+
+
+How to access items of array
+=============================
+arrayName[index]
+arr[]  
+
+document.write(arr[0]+"<br>")    //rahul
+document.write(arr[1]+"<br>")    //10
+document.write(arr[2]+"<br>")    //20
+document.write(`${arr[3]} <br/>`)  //2.25
+document.write(`${arr[4]} <br/>`)   //undefined
+
+
+
+How to change Items of Array 
+===========================
+=>Syntax: arr[index]="items"
+=>Eg:
+var arr = ["HTML", "CSS", "JS"]
+arr[0]= "React JS"
+arr[2]= "Next JS "
+document.write(arr.length+ "<br>")  //3
+document.write(arr)                 //React JS,CSS,Next JS
 
 
 
 
 
+for..of and for..in 
+==================
+if we want to execute a group of statement for every elements 
+present in given collection (string, array, objects) then we have to use
+for..in or for..of loop
+Syntax:
+for (var variableName of collection)
+{
+    statement
+    statement
+    statement
+}
+Eg:
+---
+var name= "RAMA"
+for (var data of name)
+{
+    alert(data)  //R A M A
+}
+for (var data of name)
+{
+    alert(data)  // 0 1 2 3
+}
+===============================
 
 
 
