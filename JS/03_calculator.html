@@ -22,21 +22,21 @@
 
         function add(){
             result = parseFloat(t1.value) + parseFloat(t2.value)
-            t1.value=""                                                           // for value delete after operation
+            t1.value=""                                              // for value delete after operation on website
             t2.value=""
-            document.getElementById("res").value = result
+            document.getElementById("res").value =  result
         } 
         function sub(){
             result = parseFloat(t1.value) - parseFloat(t2.value)
-            document.getElementById("res").value=` Sub is: ${result.toFixed(2)} `
+            document.getElementById("res").value=  ` Sub is: ${result.toFixed(2)} `
         }
         function mul(){
             result = parseFloat(t1.value) * parseFloat(t2.value)
-            document.getElementById("res").value=` Mul is: ${result.toFixed(2)} `
+            document.getElementById("res").value=  ` Mul is: ${result.toFixed(2)} `
         }
         function div(){
             result = parseFloat(t1.value) / parseFloat(t2.value)
-            document.getElementById("res").value=` Div is: ${result.toFixed(2)} `
+            document.getElementById("res").value=  ` Div is: ${result.toFixed(2)} `
         }
     </script>
 </body>

@@ -1,3 +1,6 @@
+
+<!-- style properties used in js while validation -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +11,12 @@
 <body>
     <input type="text" id="ti">
     <button onclick="demo()" id="btn">Validate</button>
+    
     <script>
         function demo(){
             var tb= document.getElementById("ti") 
             var b= document.getElementById("btn")
-            if(tb.value =="")
+            if(tb.value =="")                         // use .value here.. not previous
             {
                 alert("Please Enter Any value in Text")
                 tb.style.border="5px solid green"
